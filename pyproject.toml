@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "gpu-programming"
+version = "0.1.0"
+description = "Programming on a GPU"
+authors = ["Issy Codron <ic302@exeter.ac.uk>"]
+readme = "README.md"
+packages = [{include = "mandybrot_gpu"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyopencl = "^2022.3.1"
+numpy = "^1.24.2"
+pillow = "^9.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
